@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void:  #0c0c0d;
+  --color-cream: #ECE7DC;
+  --color-muted: rgba(236, 231, 220, 0.45);
+  --color-hair:  rgba(236, 231, 220, 0.14);
+  --font-display: "Inter Tight", sans-serif;
+  --font-mono:    "Space Mono", monospace;
+}
+
+html, body { margin: 0; background: var(--color-void); color: var(--color-cream); }
+body { font-family: var(--font-display); -webkit-font-smoothing: antialiased; }
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+
+.tnum { font-variant-numeric: tabular-nums; }
+
+@media (hover: hover) and (pointer: fine) { * { cursor: none; } }
